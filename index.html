@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name = "Mark Kemper's Personal Portfolio Website" content="Includes my resume, projects, and general information about me.">
     <title>HW2</title>
 
 </head>
@@ -10,13 +11,39 @@
 
     </header>
     <nav>
-
+        <a href = "./index.html">Home</a>
+        <a href = "./projects.html">Projects</a>
+        <a href = "./coursework.html">Coursework</a>
+        <a href = "./experiments.html">Experiments</a>
     </nav>
     <main>
+        <template id="template1">
+            <p>About</p>
+        </template>
         <section>
+            <img src = "https://lh3.google.com/u/0/d/10LJP6xcsH9Z6Bmh1bWteR7CaF5Bz_LGt=w1366-h768-iv1">
+        </img>
             <h1>
                 Mark Kemper
             </h1>
+            <ul>
+                <li>
+                    Computer Science major at UCSD
+                </li>
+                <li>
+                    Software Engineering Intern at AoPs
+                </li>
+            </ul>
+            <hr></hr>
+            <ol>
+                Favorite songs:
+                <li> 
+                    Johnny Cash - Bullrider
+                </li>
+                <li> 
+                    Johnny Cash - Hurt
+                </li>
+            </ol>
             <h2>
                 Resume
             </h2>
@@ -31,11 +58,32 @@
     </main>
     <aside>
         yea
-        <iframe src="https://tquantt.ucsd.edu" width="800" height="600" frameborder="0"></iframe>
-
+        yea
     </aside>
     <footer>
-        
+        Contact Me!
+        <form action="your-server-endpoint" method="post">
+            <fieldset>
+                <legend>Contact Info</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="roles">Role:</label>
+                <input list="roles">
+                <datalist id="roles">
+                    <option value="Recruiter">
+                    <option value="Student">
+                    <option value="Professional">
+                    <option value="Other">
+                </datalist>
+            </fieldset>
+            <label for="message">Message:</label>
+            <input type="message" id="message" name="message" required>
+            <button type="submit">Submit</button>
+          </form>
     </footer>
 </body>
 </html>
